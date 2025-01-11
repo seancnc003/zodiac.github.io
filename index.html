@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zodiac Sign Calculator</title>
+  <!-- Link to the CSS Reset first -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Then link to your main CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zodiac Sign Calculator</h1>
+    <p>Enter your name, birth month, and birth day below to find out your Zodiac sign, personality, and compatibility.</p>
+
+    <!-- INPUT FORM -->
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="e.g. John Doe" required />
+
+    <label for="month">Birth Month</label>
+    <select id="month" onchange="updateDays()">
+      <option value="" disabled selected>Select month</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+
+    <label for="day">Birth Day</label>
+    <!-- The day dropdown will be dynamically populated -->
+    <select id="day" required>
+      <option value="" disabled selected>Select day</option>
+      <!-- Options will be created by JavaScript -->
+    </select>
+
+    <button onclick="calculateZodiac()">Calculate My Zodiac</button>
+  </div>
+
+  <!-- MODAL (POPUP) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- CLOSE BUTTON (X) -->
+      <span class="close-btn" onclick="closeModal()">×</span>
+
+      <!-- ZODIAC DETAILS WILL BE LOADED HERE VIA SCRIPT -->
+      <div id="modal-result">
+        <!-- We will populate this with JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
