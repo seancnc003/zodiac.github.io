@@ -248,20 +248,22 @@ function getZodiacDetails(sign) {
  */
 function getZodiacImage(sign) {
   const zodiacImages = {
-    "Aries": "https://via.placeholder.com/100?text=Aries",
-    "Taurus": "https://via.placeholder.com/100?text=Taurus",
-    "Gemini": "https://via.placeholder.com/100?text=Gemini",
-    "Cancer": "https://via.placeholder.com/100?text=Cancer",
-    "Leo": "https://via.placeholder.com/100?text=Leo",
-    "Virgo": "https://via.placeholder.com/100?text=Virgo",
-    "Libra": "https://via.placeholder.com/100?text=Libra",
-    "Scorpio": "https://via.placeholder.com/100?text=Scorpio",
-    "Sagittarius": "https://via.placeholder.com/100?text=Sagittarius",
-    "Capricorn": "https://via.placeholder.com/100?text=Capricorn",
-    "Aquarius": "https://via.placeholder.com/100?text=Aquarius",
-    "Pisces": "https://via.placeholder.com/100?text=Pisces",
-    "Unknown": "https://via.placeholder.com/100?text=Unknown"
+    "Aries": "images/aries.png",
+    "Taurus": "images/taurus.png",
+    "Gemini": "images/gemini.png",
+    "Cancer": "images/cancer.png",
+    "Leo": "images/leo.png",
+    "Virgo": "images/virgo.png",
+    "Libra": "images/libra.png",
+    "Scorpio": "images/scorpio.png",
+    "Sagittarius": "images/sagittarius.png",
+    "Capricorn": "images/capricorn.png",
+    "Aquarius": "images/aquarius.png",
+    "Pisces": "images/pisces.png",
+    "Unknown": "images/unknown.png"
   };
+
+
 
   return zodiacImages[sign] || zodiacImages["Unknown"];
 }
